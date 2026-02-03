@@ -1,9 +1,15 @@
 \Problem name: 
 
 Minimize
-OBJROW: 1.50000 x_0 + 2 x_1 + 3 x_2 + 0.80000 x_3
+OBJROW: 120 x_0 + 120 x_1 + 120 x_2 + 120 x_3 + 320 x_4 + 320 x_5 + 320 x_6
 Subject To
-constr(0):  7 x_0 + 8 x_1 + 30 x_2 + 6 x_3 >= 3
-constr(1):  55 x_0 + 30 x_1 + 40 x_2 + 25 x_3 >= 5
+constr(0):  x_0 + x_4 >= 4
+constr(1):  x_1 + x_4 + x_5 >= 8
+constr(2):  x_2 + x_5 + x_6 >= 10
+constr(3):  x_3 + x_6 >= 6
+constr(4):  2 x_0 - x_4 <= -0
+constr(5):  2 x_1 - x_4 - x_5 <= -0
+constr(6):  2 x_2 - x_5 - x_6 <= -0
+constr(7):  2 x_3 - x_6 <= -0
 Bounds
 End
